@@ -1,9 +1,18 @@
 title: hexo记录
 date: 2014-09-11 11:19:30
+categories: Record
 tags: 
 - hexo
 
 ---
+
+### 文章摘要
+
+在需要的地方加上：
+
+```
+<!--more-->
+```
 
 ### 插入数学公式
 
