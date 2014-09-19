@@ -80,7 +80,7 @@ endfunction
 
 一个list包含一组有序的元素，和C++不同的是，Vimscript中list的每个元素可以为任意类型。元素通过索引访问，第一个元素的索引为0。list使用两个中括号包裹。
 
-```
+```bash 
 # 1 创建list
 let list1 = []
 let list2 = ['a', 2]
