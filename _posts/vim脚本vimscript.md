@@ -169,3 +169,4 @@ for item in items(dict)
 endfor
 ```
 
+see: http://learnvimscriptthehardway.stevelosh.com/
