@@ -6,6 +6,22 @@ tags:
 
 ---
 
+### f.browser.msie没有定义
+
+```
+# @see: http://stackoverflow.com/questions/14344289/fancybox-doesnt-work-with-jquery-v1-9-0-f-browser-is-undefined-cannot-read/14344290
+
+# vim themes/phase/layout/_partial/head.ejs
+
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+
+# replace by:
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.0.0.js"></script>
+
+```
+
+
 ### 文章摘要
 
 在需要的地方加上：
@@ -44,6 +60,50 @@ $$ \hbar\frac{\partial \psi}{\partial t}
 + \frac{\partial^2}{\partial z^2}
 \right
 ) \psi + V \psi. $$
+
+
+see: http://www.winterland.me/2013/12/hexo-mathjax/
+
+vim themesfolder/layout/\_partial/mathjax.ejs
+
+```html
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true
+
+    }
+
+});
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+
+    }
+
+});
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+
+    }
+
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+```
 
 ### 自定义页面
 
