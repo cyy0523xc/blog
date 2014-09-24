@@ -169,4 +169,14 @@ for item in items(dict)
 endfor
 ```
 
+## 其他
+
+查看内置函数的帮助：
+
+```
+:help echo 
+```
+
+调用外部命令，前面加 **!** 号。
+
 see: http://learnvimscriptthehardway.stevelosh.com/
