@@ -6,6 +6,34 @@ tags:
 
 ---
 
+# 多行字符串：IFS换行符
+
+```
+ifs=$IFS 
+IFS=$`\n`              # 注意这里，不能使用: IFS="\n" or IFS='\n'
+config=`cat <<EOF
+output: .user.js
+
+dese:
+// ==UserScript==
+// @name         Userscript
+// @namespace    http://cyy0523xc.github.io/
+// @version      0.1
+// @description  something 
+// @match        http://*/*
+// @copyright    2014, Alex(cyy0523xc@gmail.com)
+// ==/UserScript==
+    
+input: 
+- 
+   
+EOF`
+
+echo $config
+IFS=$ifs 
+
+```
+
 # 批量重命名文件
 
 ```bash
