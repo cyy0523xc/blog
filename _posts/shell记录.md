@@ -6,6 +6,18 @@ tags:
 
 ---
 
+# 字符串参与条件判断或者计算时，必须加上双引号
+
+```
+if [ -n "$string" ]; 
+
+string="test  test2"
+your_func $string      # 错误：函数会接收到两个参数
+your_func "$string"    # 正常：函数正常接收到一个参数
+```
+
+注意： **shell会把字符串按照IFS进行分割处理**
+
 # 多行字符串：IFS换行符
 
 ```
