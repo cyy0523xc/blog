@@ -1,10 +1,31 @@
 title: shell记录
-date: 2014-09-17 14:29:07
+date: 2014-10-10 
 categories: record
 tags:
 - shell 
 
 ---
+
+# 在某个目录下查找包含某个字符串的文件
+
+```
+find . | xargs grep -ri "some string"
+```
+
+### xargs命令
+
+作用：将参数列表转换成小块分段传递给其他命令，以避免参数列表过长的问题。
+
+```
+rm `find /path -type f`
+
+# 如果path目录下文件过多就会因为“参数列表过长”而报错无法执行。但改用xargs以后，问题即获解决。
+
+find /path -type f -print0 | xargs -0 rm 
+
+# xargs将find产生的长串文件列表拆散成多个子串，然后对每个子串调用rm。
+
+```
 
 # 查找指定时间范围的文件
 
