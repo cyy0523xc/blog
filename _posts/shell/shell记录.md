@@ -1,10 +1,14 @@
 title: shell记录
-date: 2014-10-10 
+date: 2014-10-11 
 categories: record
 tags:
 - shell 
 
 ---
+
+# 粘贴到行首
+
+使用大写 **P** 
 
 # 在某个目录下查找包含某个字符串的文件
 
