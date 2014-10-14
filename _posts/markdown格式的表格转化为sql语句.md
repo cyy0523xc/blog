@@ -35,7 +35,7 @@ last\_login\_time | datetime    |                         | 最后登陆时间
 
 ```sql 
 # md文件：http://git.ibbd.net/ibbd/ibbd-bc-py/blob/master/doc/db-tables.md
-# Create By http://git.ibbd.net/ibbd/ibbd-bc-py/blob/master/doc/md-table2sql.php
+# Create By http://git.ibbd.net/ibbd/ibbd-bc-py/blob/master/doc/markdown2sql.php
 # Create At 2014-10-14 15:44:36
 
 CREATE TABLE `user_login` {

@@ -1,10 +1,31 @@
 title: hexo记录
-date: 2014-09-11 11:19:30
+date: 2014-10-14
 categories: Record
 tags: 
 - hexo
 
 ---
+
+### 加上阅读更多的链接
+
+```shell
+# 针对phase主题
+vim layout/_partial/article.ejs
+```
+
+找到对应的地方，加上相应的代码，如下：
+
+```html
+    <% if (item.excerpt && index){ %>
+      <%- item.excerpt %>
+      <a href="<%- item.permalink %>" target="_blank" class="post-read-more">READ MORE</a>
+    <% } else { %>
+      <%- item.content %>
+    <% } %>
+```
+
+其中的超链接部分就是新增的。然后就是修改样式。。。
+
 
 ### f.browser.msie没有定义
 
