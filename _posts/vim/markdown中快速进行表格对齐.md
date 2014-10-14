@@ -15,7 +15,7 @@ tags:
 
 这样就可以将表格按竖线进行对齐了，比较简单。不过经常修改表格时，每次都要输入这样一个命令还是挺麻烦的，故实现成快捷键的形式，如下：
 
-```
+```vimscript
 " align
 " markdown table align by "|"
 nmap tab\|   :call CyyAlignBy("\|")<CR>
@@ -51,5 +51,5 @@ endfunction
 说明：
 
 - 依赖代码区块前后的空行来确定开始和结束的行号。
-
+- 最新版见这里：https://github.com/cyy0523xc/code/blob/master/vim/cyy.vim 
 
