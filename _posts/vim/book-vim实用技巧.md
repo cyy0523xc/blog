@@ -38,19 +38,19 @@ f=s = <Esc>          # f{char}命令：行内查找字符
 
 -  执行=》重复=》回退
 
-命令                  | 重复 | 回退
----                   | ---  | ---
-{edit}                | .    | u
-f{char}/t{char}       | ;    | ,
-F{char}/T{char}       | ;    | ,
-/pattern<CR>          | n    | N
-?pattern<CR>          | n    | N
-:s/target/replacement | &    | u
-qx{changes}q          | @x   | u
+命令                      | 重复 | 回退
+---                       | ---  | ---
+``{edit}``                | .    | u
+``f{char}/t{char}``       | ;    | ,
+``F{char}/T{char}``       | ;    | ,
+``/pattern<CR>``          | n    | N
+``?pattern<CR>``          | n    | N
+``:s/target/replacement`` | &    | u
+``qx{changes}q``          | @x   | u
 
 -  查找并手动替换
 
-1. 单键命令\* (查找单词)
+1. 单键命令 ``*`` (查找单词)
 2. 使修改可重复 
 
 -  结识.范式
