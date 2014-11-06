@@ -1,4 +1,4 @@
-titile: "封装redis基础类库"
+title: "封装redis基础类库"
 date: 2014-11-04
 tags: 
 - php 
