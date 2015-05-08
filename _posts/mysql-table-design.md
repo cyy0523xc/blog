@@ -17,26 +17,32 @@ tags:
 - 所有数据表使用统一的前缀，例如 *yjq_* 
 - 使用二级前缀规则，例如 *yjq_config* 。二级前缀对应数据模型的目录，例如 *yjq_config* 对应目录*model/Config/* 
 
-前缀        | 说明
-----        | ----
-yjq\_config | 配置相关表
-yjp\_admin  | 管理员相关表
-yjp\_user   | 用户相关表
-yjp\_task   | 任务相关表
-yjp\_order  | 订单相关表
-yjp\_msg    | 站内信等信息相关表
-yjp\_log    | 日志相关表
+``` 
+前缀       | 说明
+----       | ----
+yjq_config | 配置相关表
+yjp_admin  | 管理员相关表
+yjp_user   | 用户相关表
+yjp_task   | 任务相关表
+yjp_order  | 订单相关表
+yjp_msg    | 站内信等信息相关表
+yjp_log    | 日志相关表
+
+```
 
 可以使用脚本根据表名生成对应的数据模型。
 
 - 通用字段名规范 
 
-通用字段名  | 说明
------       | ---
-id          | 表的主键
-created\_at |
-updated\_at |
-status      |
+```
+通用字段名 | 说明
+-----      | ---
+id         | 表的主键
+created_at |
+updated_at |
+status     |
+ 
+```
 
 - 类别字段不要从0开始定义
 
